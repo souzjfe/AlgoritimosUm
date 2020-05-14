@@ -1,6 +1,6 @@
 # Algoritmos de Ordenação
 
-Imagine um jogo de cartas qualquer, você recebe 9 cartas e decide ordena-las em ordem crescente. Há várias formas de organiza-las não? Exatamente, isso também acontece com vetores numéricos desordenados. Antes de programar o código sugiro que tenha consigo algumas cartas de baralho em mãos e ordene-as na forma que diz o algoritmo.
+Imagine um jogo de cartas qualquer, você recebe nove cartas e decide ordena-las em ordem crescente. Há várias formas de organiza-las não? Exatamente, isso também acontece com vetores numéricos desordenados. Antes de programar o código sugiro que tenha consigo algumas cartas de baralho em mãos e ordene-as na forma que diz o algoritmo.
 
 A **utilidade** de ordenar uma vetor é simplesmente para facilitar o trabalho de busca.
 
