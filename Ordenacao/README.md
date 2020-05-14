@@ -33,15 +33,17 @@ E aquilo que vocês procuram está aqui:
 ~~~c
 void selection(OBJETO *vetorASerOrdenado, int tamanhoVetor)
 {
-    int indiceComparado, indicesRestantes;
-    OBJETO *PonteiroValorMinimo; // encontraremos valores minimos para o metodo de troca ela recebera o endereco de memoria do valor minimo dentro do vetor
-    for (indicesRestantes = 0; indicesRestantes < tamanhoVetor; indicesRestantes++)
+    int indiceComparado, indicesOrdenados;
+    OBJETO *PonteiroValorMinimo; // encontraremos valores minimos para o metodo de troca ela recebera o endereco de memoria do valor minimo do vetor
+    for (indicesOrdenados = 0; indicesOrdenados < tamanhoVetor; indicesOrdenados++) //a cada vez que o IndicesOrdenados 'e incrementado significa que um itam ja esta ordenado
     {
-        PonteiroValorMinimo = &vetorASerOrdenado[indicesRestantes];
-        for (indiceComparado = indicesRestantes + 1; indiceComparado < tamanhoVetor; indiceComparado++)
+        PonteiroValorMinimo = &vetorASerOrdenado[indicesOrdenados];
+        for (indiceComparado = indicesOrdenados + 1; indiceComparado < tamanhoVetor; indiceComparado++)
+        {
             if (PonteiroValorMinimo->key > vetorASerOrdenado[indiceComparado].key ) //se o valor selecionado for maior que o valor comparado atribuimos um novo apontamento para o nosso ponteiro
                 PonteiroValorMinimo = &vetorASerOrdenado[indiceComparado];
-        swap(&vetorASerOrdenado[indicesRestantes], PonteiroValorMinimo); //troca
+        }
+        swap(&vetorASerOrdenado[indicesOrdenados], PonteiroValorMinimo); //troca
     }
 }
 ~~~
@@ -49,5 +51,25 @@ void selection(OBJETO *vetorASerOrdenado, int tamanhoVetor)
 
 
 ## Insertion Sort
+
+
+
+
+
+#### Code:
+
+~~~C
+void insertion(OBJETO *vetorASerOrdenado, int tamanhoVetor)
+{
+    int indiceComparado, indicesOrdenados;
+    for (indicesOrdenados = 0; indicesOrdenados < tamanhoVetor; indicesOrdenados++) //a cada vez que o IndicesOrdenados 'e incrementado significa que um itam ja esta ordenado
+
+        for (indiceComparado = indicesOrdenados; indiceComparado > 0; indiceComparado--) //recebe o item de referencia e analisa ele de traz para frente ate chegar ao primeiro item
+            if (vetorASerOrdenado[indiceComparado].key <= vetorASerOrdenado[indiceComparado - 1].key) //se for menor que o aterior troca
+                			 swap(&vetorASerOrdenado[indiceComparado],&vetorASerOrdenado[indiceComparado - 1]); //troca
+}
+~~~
+
+
 
 ## Quick Sort

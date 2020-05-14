@@ -15,6 +15,8 @@ int main(void)
         bubble(vetorTeste, tamanho);
     else if (opcao == 2)
         selection(vetorTeste, tamanho);
+    else if (opcao == 3)
+        insertion(vetorTeste, tamanho);
     printf("Vetor ordenado:\t\t");
     printVetor(vetorTeste, tamanho);
     return 0;
