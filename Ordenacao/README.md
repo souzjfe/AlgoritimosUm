@@ -4,7 +4,9 @@ Imagine um jogo de cartas qualquer, você recebe nove cartas e decide ordena-las
 
 A **utilidade** de ordenar uma vetor é simplesmente para facilitar o trabalho de busca.
 
-Para **ilustrar melhor** vizualize cada algoritmo [aqui](https://visualgo.net/en/sorting)
+Para **ilustrar melhor** vizualize cada algoritmo <a href="https://visualgo.net/en/sorting" target="_blank">aqui</a>.
+
+Toda ordenação tem um **critério**. Pode ser ele ordenar pelo valor atribuido ao uma string, ou a ID de uma struct. Para exemplificar os  métodos ordenaremos decrescentemente. 
 
 ## Bubble Sort
 
