@@ -10,7 +10,7 @@ Para **ilustrar melhor** vizualize cada algoritmo [aqui](https://visualgo.net/en
 
 Método de bolha, como o nome sugere a intenção é criar "bolhas" de comparação, voltando ao baralho, seria como se pegassemos duas cartas, a primeira e a segunda carta da mão, olhassemos pra elas e ordenassemos colocando a de **maior valor** na segunda possição e devolvessemos novamente à mão. A proxima bolha seria entre a segunda carta (aquela que deixamos na segunda posição) e a terceira. Assim repetindo até que a maior carta **chege ao final** da mão e então teriamos **uma carta já ordenada** em seu local final. 
 
-Vamos ao codigo:
+#### Vamos ao código:
 
 ~~~c
 void bubble(OBJETO *vetorASerOrdenado, int tamanhoVetor)
@@ -28,7 +28,7 @@ void bubble(OBJETO *vetorASerOrdenado, int tamanhoVetor)
 
 Com seu baralho em mãos você escolhe uma carta, olha para ela e compara com todas as outras até encontrar uma com valor menor (pode ser outro critério, isso define o modo de ordenação), quando você a  encontra temos então uma nova carta **selecionada** fazemos isso até chegar ao final das cartas, após isso colocamos na primeira posição, já que é a menor e estamos ordenando crescentemente. Opa uma carta **já está ordenada** agora selecionamos a segunda carta e repetimos o processo.
 
-E aquilo que vocês procuram está aqui:
+#### E aquilo que vocês procuram está aqui:
 
 ~~~c
 void selection(OBJETO *vetorASerOrdenado, int tamanhoVetor)
@@ -52,9 +52,7 @@ void selection(OBJETO *vetorASerOrdenado, int tamanhoVetor)
 
 ## Insertion Sort
 
-
-
-
+O método por inserção baseia-se em observar um determinado indice e seus anteriores e inseri-lo (obvio) no local cuja o valor dele seja maior que o anterior e menor que o sucessor. **Exemplo sem enrolação a seguir:** Você tem 5 cartas em mãos, olha para a **segunda** carta e compara com as anteriores, ela é menor ou maior que a anterior? Se é menor **troca de lugar com a anterior** se maior mantém o lugar. Próxima carta, terceira posição, comparamos com a segunda e a primeira e fazemos a troca se necessário. Repete-se o processo até terminarmos as cartas.
 
 #### Code:
 
