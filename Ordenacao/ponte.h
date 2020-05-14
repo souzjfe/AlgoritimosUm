@@ -10,3 +10,5 @@ void bubble(OBJETO *vetorASerOrdenado, int tamanhoVetor);
 void printVetor(OBJETO *vetor, int tamanho);
 
 void inserirAleatoriosNoVetor(OBJETO *vetor,int tamanho);
+
+void selection(OBJETO *vetorASerOrdenado, int tamanhoVetor);
