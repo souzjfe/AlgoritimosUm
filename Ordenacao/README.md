@@ -52,7 +52,7 @@ void selection(OBJETO *vetorASerOrdenado, int tamanhoVetor)
 
 ## Insertion Sort
 
-O método por inserção baseia-se em observar um determinado indice e seus anteriores e inseri-lo (obvio) no local cuja o valor dele seja maior que o anterior e menor que o sucessor. **Exemplo sem enrolação a seguir:** Você tem 5 cartas em mãos, olha para a **segunda** carta e compara com as anteriores, ela é menor ou maior que a anterior? Se é menor **troca de lugar com a anterior** se maior mantém o lugar. Próxima carta, terceira posição, comparamos com a segunda e a primeira e fazemos a troca se necessário. Repete-se o processo até terminarmos as cartas.
+O método por inserção baseia-se em observar um determinado indice e seus anteriores e inseri-lo (obvio) no local cuja o valor dele seja maior que o anterior e menor que o sucessor. **Exemplo sem enrolação a seguir:** Você tem cinco cartas em mãos, olha para a **segunda** carta e compara com as anteriores, ela é menor ou maior que a anterior? Se é menor **troca de lugar com a anterior** se maior mantém o lugar. Próxima carta, terceira posição, comparamos com a segunda e a primeira e fazemos a troca se necessário. Repete-se o processo até terminarmos as cartas.
 
 #### Code:
 
