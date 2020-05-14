@@ -66,7 +66,7 @@ void insertion(OBJETO *vetorASerOrdenado, int tamanhoVetor)
 
         for (indiceComparado = indicesOrdenados; indiceComparado > 0; indiceComparado--) //recebe o item de referencia e analisa ele de traz para frente ate chegar ao primeiro item
             if (vetorASerOrdenado[indiceComparado].key <= vetorASerOrdenado[indiceComparado - 1].key) //se for menor que o aterior troca
-                			 swap(&vetorASerOrdenado[indiceComparado],&vetorASerOrdenado[indiceComparado - 1]); //troca
+                swap(&vetorASerOrdenado[indiceComparado],&vetorASerOrdenado[indiceComparado - 1]); //troca
 }
 ~~~
 
